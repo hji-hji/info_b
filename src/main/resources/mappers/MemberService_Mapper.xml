@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ezen.myapp.persistence.MemberService_Mapper">
+
+<select id="memberLogin" parameterType="String" resultType="mv">
+select * from bclass_member2 where memberid = #{0} and memberpwd=#{1} and delYn='N'
+</select>
+
+
+
+</mapper>
